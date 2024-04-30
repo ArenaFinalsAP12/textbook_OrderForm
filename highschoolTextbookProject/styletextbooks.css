@@ -1,0 +1,49 @@
+body{
+    background: linear-gradient(skyblue, lightgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h2{
+    color:darkgreen;
+}
+h3{
+    color:fuchsia; font-size: 24px;
+}
+a:link{
+    color: blueviolet;
+}
+a:visited{
+    color: #0349fc;
+}
+a:hover{
+    color: rgb(223, 252, 3);
+}
+#p1{
+    background-color: bisque;
+}
+.odd{
+    color: blueviolet; font-size: 22px;
+}
+.even{
+    color:cornflowerblue; font-size: 30px;
+}
+/*
+img{
+    float: left;
+}
+*/
+
+#box1{
+    border: 5px dotted;
+    width: 150px;
+    height: 100px; 
+    font-size: 20px;
+    background: greenyellow;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: 4s linear 1s infinite running myRotate;
+}
+@keyframes myRotate{
+    100%{transform: rotateX('360deg');}
+}
