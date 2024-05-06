@@ -47,3 +47,7 @@ img{
 @keyframes myRotate{
     100%{transform: rotateX('360deg');}
 }
+
+.extraForm{
+    display: none;
+}

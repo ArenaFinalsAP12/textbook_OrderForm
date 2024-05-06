@@ -29,12 +29,19 @@ function movetoOrderForm() {
         }
         if (numofBks > 0) {
             formValid = true;
-            window.alert(`You are purchasing ${numofBks} textbooks, is that correct?`);
+            window.alert(`You are purchasing ${numofBks} textbook(s), is that correct?`);
         }
-        // window.location.replace('OrderingTextbooksForm.html');
+        // Not sure how to approach this project after this step?
         if (numofBks == 0) {
             formValid = false;
             window.alert("Please select at least one textbook to purchase!");
             return false;
         }
-}
+        for (var i = 0; i < textbookOrders.length; i++) {
+            var subjQty = textbookOrders[i].value;
+            if (subjQty >= 1) {
+                window.alert(`You are buying ${subjQty} ${textbookOrders[i].name} textbook(s)`);
+            }
+    }
+}   
+    
