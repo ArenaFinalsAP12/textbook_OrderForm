@@ -26,7 +26,7 @@ function movetoOrderForm() {
         var textBookQty = Number(textbookOrders[i].value);
         numofBks+= textBookQty;
         console.log(numofBks);
-        }
+    }
         if (numofBks > 0) {
             formValid = true;
             window.alert(`You are purchasing ${numofBks} textbook(s), is that correct?`);
@@ -38,10 +38,10 @@ function movetoOrderForm() {
             return false;
         }
         for (var i = 0; i < textbookOrders.length; i++) {
-            var subjQty = textbookOrders[i].value;
+            var subjQty = Number(textbookOrders[i].value);
             if (subjQty >= 1) {
                 window.alert(`You are buying ${subjQty} ${textbookOrders[i].name} textbook(s)`);
             }
-    }
+        }    
 }   
     
